@@ -72,6 +72,6 @@ box-sizing: border-box;
 	width: 960px;
 }
 
-*, *:beofre, *:after {
+*, *:before, *:after {
 	font-family: Courier New;
 }
