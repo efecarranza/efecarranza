@@ -1,5 +1,5 @@
-Rewrite Engine On
+RewriteEngine On
 
-RewriteCond % { REQUEST_FILENAME } !-f
+RewriteCond %{ REQUEST_FILENAME } !-f
 
-Rewrite Rule ^([^\.]+)$ $1.html [NC, L]
+RewriteRule ^([^\.]+)$ $1.html [NC, L]
