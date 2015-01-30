@@ -1,77 +1,30 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
-  License: none (public domain)
+/* Website runs on Bootstrap Templates. This main.css file overrides some of 
+the default settings associated with said Template. 
+This main.css file will override to include my choice of colors, some resizing
+and formatting pictures created on it.
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+.jumbotron {
+
+  background-color: #009688;
+  color: #212121;
+
 }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
+.jumbotron .container p {
+
+  color: #ffffff;
+
 }
 
-body {
-  line-height: 1;
+.navbar-inverse .navbar-brand {
+
+  color: #ffffff;
+
 }
 
-ol, ul {
-  list-style: none;
-}
+a {
 
-blockquote, q {
-  quotes: none;
-}
+  color: #212121;
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* 
-
-=====================================
-Grid
-=====================================
-*/
-
-*, *:before, *:after {
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
-box-sizing: border-box;
-}
-
-.container {
-	margin: 0 auto;
-	padding-left: 30px;
-	padding-right: 30px;
-	width: 960px;
-}
-
-*, *:before, *:after {
-	font-family: Courier New;
 }

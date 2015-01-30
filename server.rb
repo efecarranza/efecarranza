@@ -3,13 +3,17 @@ require 'sinatra'
 # Set main website to default to efecarranza.html file
 
 get '/' do
-	File.read(File.join('public', 'efecarranza.html'))
+	File.read(File.join('public', 'index.html'))
 end
 
 # Set path to hide file extensions on website
 
 get '/profile' do
 	File.read(File.join('public', 'profile.html'))	
+end
+
+get '/portfolio' do
+	File.read(File.join('public', 'portfolio.html'))
 end
 
 get '/blog' do
