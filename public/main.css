@@ -28,3 +28,10 @@ a {
   color: #212121;
 
 }
+
+a.navbar-brand {
+
+	font-size: 12px;
+	height: 30px;
+
+}
