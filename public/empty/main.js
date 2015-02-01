@@ -16,7 +16,7 @@ var mainState = {
 		game.load.image('happyed', 'assets/happyed.png');
 
 		// Add pipes to avoid
-		game.load.image('pipe', 'assets/pipe.png');
+		game.load.image('pipe', 'assets/ruby2.png');
 
 	},
 
@@ -32,7 +32,7 @@ var mainState = {
 
 		// Add gravity so that Ed comes back down
 		game.physics.arcade.enable(this.happyed);
-		this.happyed.body.gravity.y = 1000;
+		this.happyed.body.gravity.y = 800;
 		this.happyed.anchor.setTo(-0.2, 0.5);
 
 		var spaceKey = 
@@ -74,7 +74,7 @@ var mainState = {
 
 
 		// Add a vertical velocity to Ed
-		this.happyed.body.velocity.y = -350;
+		this.happyed.body.velocity.y = -250;
 
 		// Create animation for Ed
 		var animation = game.add.tween(this.happyed);
