@@ -35,3 +35,31 @@ a.navbar-brand {
 	height: 30px;
 
 }
+
+img {
+	margin-left: auto;
+	margin-right: auto;
+	border: 2px;
+	border-color: black;
+}
+
+.lead {
+
+	font-size: 15px;
+
+}
+
+.btn-primary {
+	
+	background-color: #727272;
+	border-color: #212121;
+
+	}
+
+	.h2, h2 {
+
+		font-size: 23px;
+
+	}
+
+

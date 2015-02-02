@@ -21,7 +21,7 @@ get '/blog' do
 end
 
 get '/photos' do
-	File.read(File.join('public', 'photos.html'))	
+	File.read(File.join('public', 'photos.html'))
 end
 
 get '/videos' do
@@ -39,3 +39,7 @@ end
 get '/contact' do
 	File.read(File.join('public', 'contact.html'))	
 end
+
+# get '/flappyed' do
+# 	File.read(File.join('empty', '/empty/index.html'))
+# end
