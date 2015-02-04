@@ -37,6 +37,7 @@ a.navbar-brand {
 }
 
 img {
+	margin-top: -50px;
 	margin-left: auto;
 	margin-right: auto;
 	border: 2px;
@@ -56,10 +57,10 @@ img {
 
 	}
 
-	.h2, h2 {
+.h2, h2 {
 
-		font-size: 23px;
+	font-size: 23px;
 
-	}
+}
 
 

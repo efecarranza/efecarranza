@@ -12,11 +12,11 @@ var mainState = {
 		game.stage.backgroundColor = '#B2DFDB';
 
 		// Load Ed image
-		game.load.image('maded', 'assets/maded.png');
-		game.load.image('happyed', 'assets/happyed.png');
+		game.load.image('maded', 'empty/assets/maded.png');
+		game.load.image('happyed', 'empty/assets/happyed.png');
 
 		// Add pipes to avoid
-		game.load.image('pipe', 'assets/ruby2.png');
+		game.load.image('pipe', 'empty/assets/ruby2.png');
 
 	},
 
@@ -45,7 +45,7 @@ var mainState = {
 		this.pipes.createMultiple(20, 'pipe'); // Create 20 pipes
 		
 		// Timer that will keep adding rows
-		this.timer = game.time.events.loop(1750, this.addRowOfPipes, this);
+		this.timer = game.time.events.loop(2000, this.addRowOfPipes, this);
 
 		this.score = 0;
 		this.labelScore = game.add.text(20, 20, "0", { font: "30px Arial", fill: "#ffffff" });

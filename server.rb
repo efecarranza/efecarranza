@@ -40,6 +40,6 @@ get '/contact' do
 	File.read(File.join('public', 'contact.html'))	
 end
 
-# get '/flappyed' do
-# 	File.read(File.join('empty', '/empty/index.html'))
-# end
+get '/flappyed' do
+	File.read(File.join('public/empty', 'index.html'))
+end

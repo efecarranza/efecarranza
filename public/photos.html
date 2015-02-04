@@ -27,10 +27,10 @@
     <!-- Add fancyBox -->
     <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
     <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
   </head>
 
   <body>
+
 <!-- Navbar! -->
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -57,14 +57,17 @@
 
     <hr>
 
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Photos</h1>
+      </div>
+    </div>
+
     <div class="container">
 
-      <div class="starter-template">
-        <h1>Photos</h1>
-        <p class="lead">Here are some photos of others thing I like to do. Some are creative, some are just plain ridiculous.</p>
-      </div>
-
-    </div><!-- /.container -->
+    <div class="starter-template">
+      <p class="lead">Here are some photos of others thing I like to do. Some are creative, some are just plain ridiculous.</p>
+    </div>
 
     <a class="fancybox" rel="group" href="clarkkents.jpg"><img src="clarkkents.jpg" alt="Profile Picture" /></a>
     <a class="fancybox" rel="group" href="domi.jpg"><img src="domi.jpg" alt="Profile Picture" /></a>
@@ -80,14 +83,17 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
- <!--    // <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+<!--     // <script src="../../dist/js/bootstrap.min.js"></script>
+
+    // IE10 viewport hack for Surface/desktop Windows 8 bug
+    // <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+    <!-- Fancybox Script -->
     <script type="text/javascript">
       $(document).ready(function() {
-      $(".fancybox").fancybox();
+        $(".fancybox").fancybox();
       });
     </script>
+
   </body>
 </html>
