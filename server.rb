@@ -3,13 +3,13 @@ require 'sinatra'
 # Set main website to default to efecarranza.html file
 
 get '/' do
-	File.read(File.join('public', 'index.html'))
+	File.read(File.join('public', 'efecarranza.html'))
 end
 
 # Set path to hide file extensions on website
 
 get '/profile' do
-	File.read(File.join('public', 'profile.html'))	
+	File.read(File.join('public', 'profile.html'))
 end
 
 get '/portfolio' do
@@ -17,7 +17,7 @@ get '/portfolio' do
 end
 
 get '/blog' do
-	File.read(File.join('public', 'blog.html'))	
+	File.read(File.join('public', 'blog.html'))
 end
 
 get '/photos' do
@@ -25,19 +25,19 @@ get '/photos' do
 end
 
 get '/videos' do
-	File.read(File.join('public', 'videos.html'))	
+	File.read(File.join('public', 'videos.html'))
 end
 
 get '/map' do
-	File.read(File.join('public', 'map.html'))	
+	File.read(File.join('public', 'map.html'))
 end
 
 get '/games' do
-	File.read(File.join('public', 'games.html'))	
+	File.read(File.join('public', 'games.html'))
 end
 
 get '/contact' do
-	File.read(File.join('public', 'contact.html'))	
+	File.read(File.join('public', 'contact.html'))
 end
 
 get '/flappyed' do
