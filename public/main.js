@@ -7,7 +7,7 @@ var game = new Phaser.Game(400, 490, Phaser.AUTO, 'gameDiv');
 var mainState = {
 
 	preload: function() {
-		// This function will be executed at the beginning
+		// This function will be executed at the beginning 
 		// That's where we load the game's assets
 		game.stage.backgroundColor = '#B2DFDB';
 
@@ -35,7 +35,7 @@ var mainState = {
 		this.happyed.body.gravity.y = 800;
 		this.happyed.anchor.setTo(-0.2, 0.5);
 
-		var spaceKey =
+		var spaceKey = 
 		this.game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR);
 		spaceKey.onDown.add(this.jump, this);
 
@@ -43,7 +43,7 @@ var mainState = {
 		this.pipes = game.add.group(); // Create a group
 		this.pipes.enableBody = true; // Add physics to the group
 		this.pipes.createMultiple(20, 'pipe'); // Create 20 pipes
-
+		
 		// Timer that will keep adding rows
 		this.timer = game.time.events.loop(2000, this.addRowOfPipes, this);
 
@@ -54,7 +54,7 @@ var mainState = {
 
 	update: function() {
 		// This function is called 60 times per second
-		// It contains the game's logic
+		// It contains the game's logic 
 		// Don't let Ed go too high or too low
 		if (this.happyed.inWorld == false)
 			this.restartGame();
@@ -79,7 +79,7 @@ var mainState = {
 		// Create animation for Ed
 		var animation = game.add.tween(this.happyed);
 
-		// Set the animation to change the angle of the sprite
+		// Set the animation to change the angle of the sprite 
 		// Every 100 milliseconds
 		animation.to({angle: -20}, 100);
 
@@ -132,7 +132,6 @@ var mainState = {
 
 		// Set the alive property of Ed to false
 		this.happyed.alive = false;
-		this.happyed.loadTexture('maded');
 
 		// Prevent new pipes from appearing
 		game.time.events.remove(this.timer);

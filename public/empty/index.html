@@ -4,14 +4,10 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>RubyQuest</title>
+	<title>Flappy Ed</title>
 
-	<script src="empty/phaser.min.js"></script>
-	<script src="empty/Boot.js"></script>
-	<script src="empty/Preloader.js"></script>
-	<script src="empty/StartMenu.js"></script>
-	<script src="empty/rubyquest.js"></script>
-	<script src="empty/Fight.js"></script>
+	<script type="text/javascript" src="empty/phaser.min.js"></script>
+	<script type="text/javascript" src="empty/main.js"></script>
 	<style>
 		p {font-family: Arial;
 			font-size: 20px;
@@ -22,26 +18,16 @@
 		canvas { display:block;
 				 margin: auto;
 		}
+
 	</style>
 
 </head>
 
 <body>
-	<p> Phaser Test </p>
-	<p> Use Arrow Keys. </p>
-	<div id="rubyquest"></div>
-	<script type="text/javascript">
-	window.onload = function() {
-		var game = new Phaser.Game(640, 480, Phaser.CANVAS, 'rubyquest');
-		game.state.add('Boot', RubyQuest.Boot);
-		game.state.add('Preloader', RubyQuest.Preloader);
-		game.state.add('StartMenu', RubyQuest.StartMenu);
-		game.state.add('rubyquest', RubyQuest.rubyquest);
-		game.state.add('Fight', RubyQuest.Fight);
-		game.state.start('Boot');
-	}
-	</script>
-	<p> Testing Phaser Framework.</p>
+	<p> Flappy Ed </p>
+	<p> Press the spacebar to move up. </p>
+	<div id="gameDiv"></div>
+	<p> Idea inspired by Flappy Bird Clone by Thomas Palef.</p>
 
 </body>
 </html>
